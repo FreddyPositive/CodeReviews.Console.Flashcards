@@ -1,13 +1,7 @@
 ﻿using FlashCardLearning.Model.entities;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Configuration;
 using System.Data;
-using System.Collections;
 
 namespace FlashCardLearning.DataAccess
 {

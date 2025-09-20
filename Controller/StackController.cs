@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FlashCardLearning.DataAccess;
+﻿using FlashCardLearning.DataAccess;
 using FlashCardLearning.Model.entities;
 
 
