@@ -219,7 +219,7 @@ namespace FlashCardLearning.View
         {
             Console.Clear();
 
-            ViewStack();
+            stackMenu.ViewStack(false);
 
             Console.WriteLine("Please Enter the Stack Id to View the Flash Cards and Manage It , enter 0 to return to Previous menu");
             Console.WriteLine();
@@ -229,27 +229,6 @@ namespace FlashCardLearning.View
             if (StackId != 0) ViewFlashCards(StackId);
             else mainMenu.UserMainMenue();
         }
-
-        public void ViewStack()
-        {
-
-            Console.WriteLine("Below are the available stacks");
-            Console.WriteLine();
-
-            List<Stacks> stackList = stackController.ViewStack();
-
-            var stackTable = new ConsoleTable("Id", "Stack Name");
-
-            foreach (Stacks stack in stackList)
-            {
-                stackTable.AddRow(stack.Id, stack.StackName);
-            }
-            stackTable.Write();
-
-            Console.WriteLine();
-
-        }
-
         private void ViewFlashCards(int StackId)
         {
             Console.WriteLine("Below are the Available Flash Cards");
