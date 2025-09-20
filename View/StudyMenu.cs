@@ -14,12 +14,12 @@ namespace FlashCardLearning.View
         StackController stackController = new();
         StudyController studyController = new();
 
-        int StackId = 0;
-        int totalPoints = 0;
-        int totalReviewdPoints = 0;
+        int StackId;
+        int totalPoints;
+        int totalReviewdPoints;
         DateTime sessionStartTime;
         DateTime sessionEndTime;
-        int durationPerSession = 0;
+        int durationPerSession;
         string FlashCardslist = "";
 
         internal void StudySession()

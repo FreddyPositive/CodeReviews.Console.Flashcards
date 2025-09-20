@@ -10,12 +10,9 @@ namespace FlashCardLearning.View
         FlashCardController flashCardController = new();
         StackController stackController = new();
 
-        int StackId = 0;
+        int StackId;
         private void ManageFlashCard()
         {
-
-            StackMenu stackMenu = new();
-
             Console.Clear();
 
             ViewFlashCard();

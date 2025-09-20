@@ -22,7 +22,7 @@ namespace FlashCardLearning.DataAccess
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.Add("@stackname", SqlDbType.Int).Value = stackEntity.StackName;
+                        command.Parameters.Add("@stackname", SqlDbType.VarChar).Value = stackEntity.StackName;
                         command.ExecuteNonQuery();
 
                         Console.WriteLine();
@@ -86,7 +86,7 @@ namespace FlashCardLearning.DataAccess
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.Add("@stackId", SqlDbType.VarChar).Value = stackId;
+                        command.Parameters.Add("@stackId", SqlDbType.Int).Value = stackId;
 
                         object? result = command.ExecuteScalar();
 
