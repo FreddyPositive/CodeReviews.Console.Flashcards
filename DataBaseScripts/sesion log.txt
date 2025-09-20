@@ -1,0 +1,5 @@
+select  ROW_NUMBER() OVER (ORDER BY session_date ASC) AS RowNum,
+stack_name,session_date,points from LearningLog l
+INNER JOIN Stacks s ON s.id = l.stack_id
+where ( (@Year IS NULL OR YEAR(l.session_date) = @Year) AND (@Month IS NULL OR  MONTH(l.session_date) = @Month)
+ AND ( @Day IS NULL OR DAY(l.session_date) = @Day) AND (@Date IS NULL OR CAST(l.session_date AS DATE) = @Date) )
