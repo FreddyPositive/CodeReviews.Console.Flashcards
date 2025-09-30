@@ -483,7 +483,5 @@ $RECYCLE.BIN/
 .idea
 
 
-    #temp files
-    FlashCards.Review/FlashCard.App/bin/
-    FlashCards.Review/FlashCard.App/obj/
-    FlashCards.Review/FlashCard.App/DataBaseScripts/
+#temp files
+FlashCards.Review/FlashCard.App/obj/
