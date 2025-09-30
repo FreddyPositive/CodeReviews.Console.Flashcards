@@ -12,7 +12,7 @@
 
 # Env files.
 .env
-FlashCards.Review/FlashCard.App/app.config
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -483,7 +483,7 @@ $RECYCLE.BIN/
 .idea
 
 
-#temp files
-FlashCards.Review/FlashCard.App/bin/
-FlashCards.Review/FlashCard.App/obj/
-FlashCards.Review/FlashCard.App/DataBaseScripts/
+    #temp files
+    FlashCards.Review/FlashCard.App/bin/
+    FlashCards.Review/FlashCard.App/obj/
+    FlashCards.Review/FlashCard.App/DataBaseScripts/
