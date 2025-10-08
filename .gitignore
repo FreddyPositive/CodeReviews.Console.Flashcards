@@ -12,7 +12,6 @@
 
 # Env files.
 .env
-FlashCards.Review/FlashCard.App/app.config
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
