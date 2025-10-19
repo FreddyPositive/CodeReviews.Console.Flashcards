@@ -1,4 +1,4 @@
-﻿using FlashCardLearning.View;
+﻿using FlashCardLearning.Views;
 
 MainMenu mainMenu = new();
 
